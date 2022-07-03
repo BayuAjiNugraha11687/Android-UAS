@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/callcenter"
+        android:title="Call Center"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/sms"
+        android:title="SMS"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/maps"
+        android:title="Maps"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/update"
+        android:title="Update User dan Password"
+        app:showAsAction="never"/>
+</menu>
