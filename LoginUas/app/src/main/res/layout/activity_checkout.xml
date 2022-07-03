@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".checkout">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0e8e8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/rekening_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="A11.2019.11687"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Belum Terbayar"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="19/01/2022"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/satu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout1"
+        android:layout_marginTop="20dp"
+        android:text="Pemesanan"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/dua"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/satu"
+        android:layout_marginTop="10dp"
+        android:text="No. Nota"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/no_nota_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dua"
+        android:layout_marginTop="10dp"
+        android:text="001"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <View
+        android:id="@+id/garis1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/no_nota_id"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/tiga"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis1"
+        android:layout_marginTop="10dp"
+        android:text="Username"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+    <TextView
+        android:id="@+id/user_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tiga"
+        android:layout_marginTop="10dp"
+        android:text="Bayu Aji Nugraha"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <View
+        android:id="@+id/garis2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/user_id"
+        android:background="@android:color/darker_gray" />
+
+    <TextView
+        android:id="@+id/empat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/garis2"
+        android:layout_marginTop="10dp"
+        android:text="Detail Pembayaran"
+        android:textColor="@color/design_default_color_primary"
+        android:textSize="15dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/empat"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Total Pembayaran"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <TextView
+            android:id="@+id/total_biaya_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="15800"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginTop="10dp"
+        android:background="#f0e8e8"
+        android:text="UPLOAD BUKTI PEMBAYARAN"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/gambar_upload"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@id/btn_gallery"
+        android:src="@drawable/logo_huruf_a" />
+
+    <Button
+        android:id="@+id/btn_cetak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gambar_upload"
+        android:layout_marginTop="10dp"
+        android:background="#f0e8e8"
+        android:text="CETAK PDF"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btn_simpan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_cetak"
+        android:layout_marginTop="10dp"
+        android:background="#f0e8e8"
+        android:text="KIRIM BUKTI PEMBAYARAN"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
+
